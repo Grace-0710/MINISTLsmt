@@ -15,6 +15,17 @@
   - batch first = true
   - LSTM기본 = (time step, batch size, vector size ) == (28, bs, 28 )
   - batch first = true -> (batch size, time step, vector size ) == (bs, 28, 28 )
+  
   ![스크린샷 2023-04-01 오전 10 27 39](https://user-images.githubusercontent.com/84004919/229259202-de8511ff-9dcc-46a7-ba9d-9926d9b5bbe5.png)
 
+  - self.rnn
+    ![스크린샷 2023-04-01 오전 10 30 59](https://user-images.githubusercontent.com/84004919/229259346-c670395b-fd5e-427e-8c06-381a0674f1cb.png)
+  - forward 결과 = 마지막껏만 가져와용 
+    ![스크린샷 2023-04-01 오전 10 36 40](https://user-images.githubusercontent.com/84004919/229259536-e1b58951-eba3-401a-98b3-32ea92f86750.png)
+
+    -> slef.layer마지막 sfotmax ></ ( ==output은 cnn이랑 동일 )
+  
+ * train.py
+  - get model -> rnn if문 추가
+  - 
   
